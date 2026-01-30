@@ -122,12 +122,6 @@
 
     <!-- Navbar -->
     <header class="navbar">
-        <div class="nav-left">
-            <a href="#">SHOP</a>
-            <a href="#">BUNDLE & SAVE</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT US</a>
-        </div>
 
         <div class="logo">9SKIN</div>
 
@@ -139,20 +133,27 @@
     </header>
 
     <!-- Login Section -->
-    <section class="login-container">
+   <section class="login-container">
+      <div class="login-box">
         <h1>LOGIN</h1>
 
         <form class="login-form">
             <input type="email" placeholder="Email" required>
             <input type="password" placeholder="Password" required>
 
-            <a href="#" class="forgot">Forgot your password?</a>
+            <div class="login-links">
+                <a href="#" class="forgot">Forgot your password?</a>
+            </div>
 
             <button type="submit">SIGN IN</button>
 
-            <a href="#" class="create">Create account</a>
+            <p class="create">
+                Don't have an account? <a href="#">Create account</a>
+            </p>
         </form>
+      </div>
     </section>
+
 
 </body>
 </html>
