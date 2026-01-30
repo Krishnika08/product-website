@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up | 9SKIN Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* Navbar */
+        .navbar{
+            background-color: #d19a9f;
+            padding: 18px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo{
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+
+        .nav-right span{
+            margin-left: 15px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Signup Section */
+        .signup-container{
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .signup-container h1{
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: #8a5a5f;
+            margin-bottom: 40px;
+        }
+
+        /* Form */
+        .signup-form{
+            width: 420px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .signup-form input{
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 20px;
+            border: 1px solid #e5bfc3;
+            outline: none;
+            font-size: 15px;
+            background: transparent;
+        }
+
+        .signup-form input::placeholder{
+            color: #c79a9e;
+            letter-spacing: 1px;
+        }
+
+        /* Button */
+        .signup-form button{
+            background-color: #d19a9f;
+            border: none;
+            padding: 14px 50px;
+            color: white;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .signup-form button:hover{
+            background-color: #b97c82;
+        }
+
+        /* Login link */
+        .login-link{
+            margin-top: 20px;
+            font-size: 14px;
+            color: #c79a9e;
+        }
+
+        .login-link a{
+            text-decoration: none;
+            color: #8a5a5f;
+            font-weight: 600;
+        }
+
+        /* 📱 Responsive */
+        @media (max-width: 768px){
+            .navbar{
+                padding: 15px 20px;
+            }
+
+            .logo{
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+
+            .signup-container h1{
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+
+            .signup-form{
+                width: 100%;
+                max-width: 340px;
+            }
+
+            .signup-form input{
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .signup-form button{
+                width: 100%;
+                padding: 14px;
+            }
+        }
+
+        @media (max-width: 480px){
+            .signup-container h1{
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+
+            .signup-form{
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">9SKIN</div>
+
+        <div class="nav-right">
+            <span>🔍</span>
+            <span>👤</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <!-- Signup Section -->
+    <section class="signup-container">
+        <h1>SIGN UP</h1>
+
+        <form class="signup-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <button type="submit">CREATE ACCOUNT</button>
+
+            <p class="login-link">
+                Already have an account? <a href="new1.html">Login</a>
+            </p>
+        </form>
+    </section>
+
+</body>
+</html>
