@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <style>
+      <style>
         .container-fluid {
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -73,102 +73,124 @@
           height: auto;
           border-radius: 10px;
         }
+        .row{
+          align-items: center;
+
+        }
+        .product-card{
+          width: 18rem;
+          border-radius: 15px;
+          transition: 0.3s ease-in-out;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        .product-card:hover{
+          transform: translateY(-8px) scale(1.02);
+          box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .card-img-top{
+          border-radius: 15px 15px 0 0;
+          height: 220px;
+          object-fit: cover;
+        }
+
         /* Footer */
-.footer{
-    background: linear-gradient(to right, #FFE0D9, #F6A6C1);
-    color: white;
-    margin-top: 80px;
-    padding-top: 50px;
-}
+        .footer{
+            background: linear-gradient(to right, #FFE0D9, #F6A6C1);
+            color: white;
+            margin-top: 80px;
+            padding-top: 50px;
+        }
 
-.footer-container{
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 30px 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-        color:rgb(95, 91, 91);
-    gap: 30px;
-}
+        .footer-container{
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 30px 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+                color:rgb(95, 91, 91);
+            gap: 30px;
+        }
 
-.footer-box h3{
-    margin-bottom: 15px;
-    font-size: 16px;
-        color:rgb(95, 91, 91);
-}
+        .footer-box h3{
+            margin-bottom: 15px;
+            font-size: 16px;
+                color:rgb(95, 91, 91);
+        }
 
-.brand{
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    color:rgb(95, 91, 91); 
-}
+        .brand{
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color:rgb(95, 91, 91); 
+        }
 
-.desc{
-    font-size: 14px;
-    line-height: 1.6;
-    opacity: 0.95;
-     color:rgb(95, 91, 91);
-}
+        .desc{
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.95;
+            color:rgb(95, 91, 91);
+        }
 
-.footer-box ul{
-    list-style: none;
-    color:rgb(95, 91, 91);
-}
+        .footer-box ul{
+            list-style: none;
+            color:rgb(95, 91, 91);
+        }
 
-.footer-box ul li{
-    margin-bottom: 10px;
-    color:rgb(95, 91, 91);  
-}
+        .footer-box ul li{
+            margin-bottom: 10px;
+            color:rgb(95, 91, 91);  
+        }
 
-.footer-box ul li a{
-    text-decoration: none;
-    color: rgb(95, 91, 91);
-    font-size: 14px;
-    opacity: 0.9;
-    transition: 0.3s;
-    color:rgb(95, 91, 91);
-}
+        .footer-box ul li a{
+            text-decoration: none;
+            color: rgb(95, 91, 91);
+            font-size: 14px;
+            opacity: 0.9;
+            transition: 0.3s;
+            color:rgb(95, 91, 91);
+        }
 
-.footer-box ul li a:hover{
-    opacity: 1;
-    padding-left: 5px;
-}
+        .footer-box ul li a:hover{
+            opacity: 1;
+            padding-left: 5px;
+        }
 
-/* Bottom */
-.footer-bottom{
-    background: rgba(0,0,0,0.15);
-    text-align: center;
-    padding: 15px;
-    font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    
-}
+        /* Bottom */
+        .footer-bottom{
+            background: rgba(0,0,0,0.15);
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            
+        }
 
-/* Responsive */
-@media(max-width:900px){
-    .footer-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+        /* Responsive */
+        @media(max-width:900px){
+            .footer-container{
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-    .footer-bottom{
-        flex-direction: column;
-        gap: 5px;
-    }
-}
+            .footer-bottom{
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
 
-@media(max-width:500px){
-    .footer-container{
-        grid-template-columns: 1fr;
-        text-align: center;
-        color:rgb(95, 91, 91);
-    }
-}    
+        @media(max-width:500px){
+            .footer-container{
+                grid-template-columns: 1fr;
+                text-align: center;
+                color:rgb(95, 91, 91);
+            }
+        }    
     </style>
 </head>
 <body>
@@ -238,84 +260,84 @@
 
 <br>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="n.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <b>PURIFICATE - Face Cleanser Sheet</b></h5>
-            <p class="card-text"> <b>Rs. 290 </b> </p>
-            <a href="#" class="btn btn-secondary">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="n1.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <b> SKINTILLATE - Booster Face Oil</b></h5>
-            <p class="card-text"> <b>Rs. 1,099 </b> </p>
-            <a href="#" class="btn btn-secondary">Add to Cart</a>
-          </div>
+ <div class="container py-5">
+  <div class="row justify-content-center g-4 text-center">
+
+    <!-- Card 1 -->
+    <div class="col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card product-card">
+        <img src="n.jpeg" class="card-img-top" alt="PURIFICATE">
+        <div class="card-body">
+          <h5 class="card-title"><b>PURIFICATE - Face Cleanser Sheet</b></h5>
+          <p class="card-text"><b>Rs. 290</b></p>
+          <a href="#" class="btn btn-secondary w-100">Add to Cart</a>
         </div>
       </div>
     </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card product-card">
+        <img src="n1.jpeg" class="card-img-top" alt="SKINTILLATE">
+        <div class="card-body">
+          <h5 class="card-title"><b>SKINTILLATE - Booster Face Oil</b></h5>
+          <p class="card-text"><b>Rs. 1,099</b></p>
+          <a href="#" class="btn btn-secondary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card product-card">
+        <img src="n2.jpeg" class="card-img-top" alt="ETERNELLE">
+        <div class="card-body">
+          <h5 class="card-title"><b>ETERNELLE - Anti-Aging Serum</b></h5>
+          <p class="card-text"><b>Rs. 1,499</b></p>
+          <a href="#" class="btn btn-secondary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card product-card">
+        <img src="n3.jpeg" class="card-img-top" alt="ILLUMINATE">
+        <div class="card-body">
+          <h5 class="card-title"><b>ILLUMINATE - Glow Serum Oil</b></h5>
+          <p class="card-text"><b>Rs. 1,499</b></p>
+          <a href="#" class="btn btn-secondary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card product-card">
+        <img src="n4.jpeg" class="card-img-top" alt="REJUVENATE">
+        <div class="card-body">
+          <h5 class="card-title"><b>REJUVENATE - Night Cream</b></h5>
+          <p class="card-text"><b>Rs. 1,999</b></p>
+          <a href="#" class="btn btn-secondary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="col-md-4 col-lg-3 d-flex justify-content-center">
+      <div class="card product-card">
+        <img src="n5.jpeg" class="card-img-top" alt="REVIVE">
+        <div class="card-body">
+          <h5 class="card-title"><b>REVIVE - Day Cream with SPF+++</b></h5>
+          <p class="card-text"><b>Rs. 1,999</b></p>
+          <a href="#" class="btn btn-secondary w-100">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <br>
-  <br>
+</div>
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="n2.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <b> ETERNELLE - Anti-Aging Serum </b></h5>
-            <p class="card-text"> <b>Rs. 1,499 </b> </p>
-            <a href="#" class="btn btn-secondary">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="n3.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <b> ILLUMINATE - Glow Serum Oil </b></h5>
-            <p class="card-text"> <b>Rs. 1,499 </b> </p>
-            <a href="#" class="btn btn-secondary">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
- <div class="container text-center">
-    <div class="row">
-      
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="n4.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <b> REJUVENATE - Night Cream  </b></h5>
-            <p class="card-text"> <b>Rs. 1,999 </b> </p>
-            <a href="#" class="btn btn-secondary">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="n5.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> <b> REVIVE - Day Cream with SPF+++  </b></h5>
-            <p class="card-text"> <b>Rs. 1,999 </b> </p>
-            <a href="#" class="btn btn-secondary">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
 <br>
 <nav class="navbar bg-body-tertiary">
   <div class="container-fluid">
